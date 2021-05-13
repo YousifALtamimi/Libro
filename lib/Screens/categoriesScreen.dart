@@ -26,7 +26,7 @@ class CategoriesScreen extends StatelessWidget {
               color: Colors.grey[800],
             ),
           ),
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.grey[200],
           elevation: 3,
           bottomOpacity: 0,
           actions: <Widget>[
