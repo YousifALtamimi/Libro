@@ -1,4 +1,3 @@
-import 'package:Library_App/main.dart';
 import 'package:flutter/material.dart';
 
 class Architecture extends StatelessWidget {
@@ -36,7 +35,7 @@ class Architecture extends StatelessWidget {
                       child: Row(
                         children: <Widget>[
                           Container(
-                            child: myDetails(),
+                            child: MyDetails(),
                           ),
                           Container(
                             width: 250,
@@ -45,8 +44,7 @@ class Architecture extends StatelessWidget {
                               child: Image(
                                 fit: BoxFit.contain,
                                 alignment: Alignment.topLeft,
-                                image: NetworkImage(
-                                    "https://images-na.ssl-images-amazon.com/images/I/51RRK++5NrL._SX258_BO1,204,203,200_.jpg"),
+                                image: AssetImage('Assets/Engineering.png'),
                               ),
                             ),
                           )
@@ -60,7 +58,7 @@ class Architecture extends StatelessWidget {
   }
 }
 
-class myDetails extends StatelessWidget {
+class MyDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
