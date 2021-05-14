@@ -15,7 +15,7 @@ class CategoriesScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: PreferredSize(
-        preferredSize: Size(double.infinity, 110),
+        preferredSize: Size(double.infinity, 100),
         child: AppBar(
           title: Text(
             "Libro",
@@ -292,23 +292,25 @@ class CategoriesScreen extends StatelessWidget {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('Assets/Art.png'),
-                  fit: BoxFit.fill,
+                  fit: BoxFit.cover,
                 ),
                 boxShadow: [
                   BoxShadow(
-                      color: Colors.grey, blurRadius: 15, offset: Offset(4, 6)),
+                      color: Colors.grey, blurRadius: 15, offset: Offset(5, 5)),
                 ],
                 borderRadius: BorderRadius.circular(35.0),
               ),
-              child: Center(
+              padding: EdgeInsets.all(12),
+              child: Align(
+                  alignment: Alignment.bottomCenter,
                   child: Text(
-                'Art',
-                style: TextStyle(
-                    fontFamily: 'Ubuntu',
-                    fontWeight: FontWeight.w700,
-                    fontSize: 24,
-                    color: Colors.black),
-              )),
+                    'Art',
+                    style: TextStyle(
+                        fontFamily: 'DMSans',
+                        fontWeight: FontWeight.w700,
+                        fontSize: 24,
+                        color: Colors.grey[800]),
+                  )),
             ),
           ),
           InkWell(
@@ -319,23 +321,25 @@ class CategoriesScreen extends StatelessWidget {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('Assets/Law.png'),
-                  fit: BoxFit.fill,
+                  fit: BoxFit.cover,
                 ),
                 boxShadow: [
                   BoxShadow(
-                      color: Colors.grey, blurRadius: 15, offset: Offset(4, 6)),
+                      color: Colors.grey, blurRadius: 15, offset: Offset(5, 5)),
                 ],
                 borderRadius: BorderRadius.circular(35.0),
               ),
-              child: Center(
+              padding: EdgeInsets.all(12),
+              child: Align(
+                  alignment: Alignment.bottomCenter,
                   child: Text(
-                'Law',
-                style: TextStyle(
-                    fontFamily: 'Ubuntu',
-                    fontWeight: FontWeight.w700,
-                    fontSize: 24,
-                    color: Colors.black),
-              )),
+                    'Law',
+                    style: TextStyle(
+                        fontFamily: 'DMSans',
+                        fontWeight: FontWeight.w700,
+                        fontSize: 24,
+                        color: Colors.grey[800]),
+                  )),
             ),
           ),
         ],
