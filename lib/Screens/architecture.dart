@@ -6,7 +6,7 @@ class Architecture extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size(double.infinity, 110),
+          preferredSize: Size(double.infinity, 100),
           child: AppBar(
             title: Text(
               'Architecture',
@@ -36,17 +36,13 @@ class Architecture extends StatelessWidget {
                       child: Row(
                         children: <Widget>[
                           Container(
-                            child: myDetails(),
-                          ),
-                          Container(
                             width: 250,
-                            height: 250,
+                            height: 100,
                             child: ClipRect(
                               child: Image(
                                 fit: BoxFit.contain,
                                 alignment: Alignment.topLeft,
-                                image: NetworkImage(
-                                    "https://images-na.ssl-images-amazon.com/images/I/51RRK++5NrL._SX258_BO1,204,203,200_.jpg"),
+                                image: AssetImage('Assets/1st.png'),
                               ),
                             ),
                           )
