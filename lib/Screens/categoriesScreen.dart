@@ -233,7 +233,7 @@ class CategoriesScreen extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('Assets/Law.png'),
+                  image: AssetImage('Assets/Physics.png'),
                   fit: BoxFit.cover,
                 ),
                 boxShadow: [
@@ -246,7 +246,36 @@ class CategoriesScreen extends StatelessWidget {
               child: Align(
                   alignment: Alignment.bottomCenter,
                   child: Text(
-                    'Law',
+                    'Physics',
+                    style: TextStyle(
+                        fontFamily: 'DMSans',
+                        fontWeight: FontWeight.w700,
+                        fontSize: 24,
+                        color: Colors.grey[800]),
+                  )),
+            ),
+          ),
+          InkWell(
+            onTap: () {
+              print("Card Clicked");
+            },
+            child: Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('Assets/Maths.png'),
+                  fit: BoxFit.cover,
+                ),
+                boxShadow: [
+                  BoxShadow(
+                      color: Colors.grey, blurRadius: 15, offset: Offset(5, 5)),
+                ],
+                borderRadius: BorderRadius.circular(35.0),
+              ),
+              padding: EdgeInsets.all(12),
+              child: Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Text(
+                    'Maths',
                     style: TextStyle(
                         fontFamily: 'DMSans',
                         fontWeight: FontWeight.w700,
@@ -263,35 +292,6 @@ class CategoriesScreen extends StatelessWidget {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('Assets/Art.png'),
-                  fit: BoxFit.cover,
-                ),
-                boxShadow: [
-                  BoxShadow(
-                      color: Colors.grey, blurRadius: 15, offset: Offset(5, 5)),
-                ],
-                borderRadius: BorderRadius.circular(35.0),
-              ),
-              padding: EdgeInsets.all(12),
-              child: Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Text(
-                    'Art',
-                    style: TextStyle(
-                        fontFamily: 'DMSans',
-                        fontWeight: FontWeight.w700,
-                        fontSize: 24,
-                        color: Colors.grey[800]),
-                  )),
-            ),
-          ),
-          InkWell(
-            onTap: () {
-              print("Card Clicked");
-            },
-            child: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('Assets/Code.png'),
                   fit: BoxFit.fill,
                 ),
                 boxShadow: [
@@ -302,7 +302,7 @@ class CategoriesScreen extends StatelessWidget {
               ),
               child: Center(
                   child: Text(
-                '',
+                'Art',
                 style: TextStyle(
                     fontFamily: 'Ubuntu',
                     fontWeight: FontWeight.w700,
@@ -318,7 +318,7 @@ class CategoriesScreen extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('Assets/Code.png'),
+                  image: AssetImage('Assets/Law.png'),
                   fit: BoxFit.fill,
                 ),
                 boxShadow: [
@@ -329,7 +329,7 @@ class CategoriesScreen extends StatelessWidget {
               ),
               child: Center(
                   child: Text(
-                '',
+                'Law',
                 style: TextStyle(
                     fontFamily: 'Ubuntu',
                     fontWeight: FontWeight.w700,

@@ -55,7 +55,8 @@ flutter:
     - Assets/Economics.png
     - Assets/Business.png
     - Assets/Art.png
-    - Assets/Code.png
+    - Assets/Maths.png
+    - Assets/Physics.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
