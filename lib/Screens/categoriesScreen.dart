@@ -83,9 +83,7 @@ class CategoriesScreen extends StatelessWidget {
             ),
           ),
           InkWell(
-            onTap: () {
-              print("Card Clicked");
-            },
+            onTap: () => selectCategory(context),
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
