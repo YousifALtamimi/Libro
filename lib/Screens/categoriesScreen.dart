@@ -1,13 +1,10 @@
+import 'package:Library_App/BouncyPageRoute.dart';
 import 'package:Library_App/Screens/architecture.dart';
 import 'package:flutter/material.dart';
 
 class CategoriesScreen extends StatelessWidget {
   void selectCategory(BuildContext context) {
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (c) => Architecture(),
-      ),
-    );
+    Navigator.of(context).push(BouncyPageRoute(widget: Architecture()));
   }
 
   @override
@@ -39,7 +36,7 @@ class CategoriesScreen extends StatelessWidget {
                 color: Colors.grey[800],
                 iconSize: 35),
             IconButton(
-                icon: Icon(Icons.account_circle),
+                icon: Icon(Icons.menu),
                 color: Colors.grey[800],
                 onPressed: () => debugPrint("tapped"),
                 iconSize: 35),
