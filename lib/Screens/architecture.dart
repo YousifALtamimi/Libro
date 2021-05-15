@@ -12,12 +12,16 @@ class Architecture extends StatelessWidget {
               style: TextStyle(
                 fontFamily: 'DMSans',
                 fontWeight: FontWeight.w700,
-                fontSize: 30,
-                color: Colors.white,
+                fontSize: 25,
+                color: Colors.black,
               ),
             ),
-            iconTheme: IconThemeData(color: Colors.white),
-            backgroundColor: Colors.brown[600],
+            iconTheme: IconThemeData(color: Colors.black),
+            flexibleSpace: Container(
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage('Assets/arch.png'),
+                        fit: BoxFit.cover))),
           ),
         ),
         body: ListView(
@@ -36,7 +40,7 @@ class Architecture extends StatelessWidget {
                         children: <Widget>[
                           Container(
                             width: 250,
-                            height: 100,
+                            height: 180,
                             child: ClipRRect(
                               borderRadius: new BorderRadius.circular(10.0),
                               child: Image(
@@ -45,7 +49,12 @@ class Architecture extends StatelessWidget {
                                 image: AssetImage('Assets/1st.png'),
                               ),
                             ),
-                          )
+                          ),
+                          Container(
+                              child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: myDetailsContainer(),
+                          )),
                         ],
                       ),
                     ),
@@ -92,7 +101,7 @@ class Architecture extends StatelessWidget {
                         children: <Widget>[
                           Container(
                             width: 250,
-                            height: 100,
+                            height: 180,
                             child: ClipRRect(
                               borderRadius: new BorderRadius.circular(10.0),
                               child: Image(
@@ -103,10 +112,10 @@ class Architecture extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            child: Padding(
-                                padding: const EdgeInsets.only(left: 16.0),
-                                child: myArch1()),
-                          ),
+                              child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: myDetailsContainer(),
+                          )),
                         ],
                       ),
                     ),
@@ -117,15 +126,15 @@ class Architecture extends StatelessWidget {
   }
 }
 
-Widget myArch1() {
+Widget myDetailsContainer() {
   return Column(
     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
     children: <Widget>[
       Padding(
-        padding: const EdgeInsets.only(left: 8.0),
+        padding: const EdgeInsets.only(left: 10),
         child: Container(
             child: Text(
-          "Chocolate Haven",
+          "Backstage Architecture",
           style: TextStyle(
               color: Color(0xffe6020a),
               fontSize: 24.0,

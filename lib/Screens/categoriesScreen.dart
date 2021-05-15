@@ -22,11 +22,14 @@ class CategoriesScreen extends StatelessWidget {
             style: TextStyle(
               fontFamily: 'DMSans',
               fontWeight: FontWeight.w700,
-              fontSize: 45,
+              fontSize: 50,
               color: Colors.grey[800],
             ),
           ),
-          backgroundColor: Colors.grey[200],
+          flexibleSpace: Container(
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage('Assets/bb.png'), fit: BoxFit.cover))),
           elevation: 3,
           bottomOpacity: 0,
           actions: <Widget>[
@@ -45,7 +48,7 @@ class CategoriesScreen extends StatelessWidget {
       ),
       body: GridView.count(
         primary: false,
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(12),
         crossAxisSpacing: 12,
         mainAxisSpacing: 12,
         crossAxisCount: 2,
@@ -63,8 +66,8 @@ class CategoriesScreen extends StatelessWidget {
                   BoxShadow(
                       color: Colors.grey,
                       spreadRadius: 0,
-                      blurRadius: 15,
-                      offset: Offset(5, 5)),
+                      blurRadius: 10,
+                      offset: Offset(4, 8)),
                 ],
                 borderRadius: BorderRadius.circular(35.0),
               ),
@@ -92,7 +95,7 @@ class CategoriesScreen extends StatelessWidget {
                 ),
                 boxShadow: [
                   BoxShadow(
-                      color: Colors.grey, blurRadius: 15, offset: Offset(5, 5)),
+                      color: Colors.grey, blurRadius: 10, offset: Offset(4, 8)),
                 ],
                 borderRadius: BorderRadius.circular(35.0),
               ),
@@ -122,7 +125,7 @@ class CategoriesScreen extends StatelessWidget {
                 ),
                 boxShadow: [
                   BoxShadow(
-                      color: Colors.grey, blurRadius: 15, offset: Offset(5, 5)),
+                      color: Colors.grey, blurRadius: 10, offset: Offset(4, 8)),
                 ],
                 borderRadius: BorderRadius.circular(35.0),
               ),
@@ -151,7 +154,7 @@ class CategoriesScreen extends StatelessWidget {
                 ),
                 boxShadow: [
                   BoxShadow(
-                      color: Colors.grey, blurRadius: 15, offset: Offset(5, 5)),
+                      color: Colors.grey, blurRadius: 10, offset: Offset(4, 8)),
                 ],
                 borderRadius: BorderRadius.circular(35.0),
               ),
@@ -180,7 +183,7 @@ class CategoriesScreen extends StatelessWidget {
                 ),
                 boxShadow: [
                   BoxShadow(
-                      color: Colors.grey, blurRadius: 15, offset: Offset(5, 5)),
+                      color: Colors.grey, blurRadius: 10, offset: Offset(4, 8)),
                 ],
                 borderRadius: BorderRadius.circular(35.0),
               ),
@@ -209,7 +212,7 @@ class CategoriesScreen extends StatelessWidget {
                 ),
                 boxShadow: [
                   BoxShadow(
-                      color: Colors.grey, blurRadius: 15, offset: Offset(5, 5)),
+                      color: Colors.grey, blurRadius: 10, offset: Offset(4, 8)),
                 ],
                 borderRadius: BorderRadius.circular(35.0),
               ),
@@ -238,7 +241,7 @@ class CategoriesScreen extends StatelessWidget {
                 ),
                 boxShadow: [
                   BoxShadow(
-                      color: Colors.grey, blurRadius: 15, offset: Offset(5, 5)),
+                      color: Colors.grey, blurRadius: 10, offset: Offset(4, 8)),
                 ],
                 borderRadius: BorderRadius.circular(35.0),
               ),
@@ -267,7 +270,7 @@ class CategoriesScreen extends StatelessWidget {
                 ),
                 boxShadow: [
                   BoxShadow(
-                      color: Colors.grey, blurRadius: 15, offset: Offset(5, 5)),
+                      color: Colors.grey, blurRadius: 15, offset: Offset(4, 8)),
                 ],
                 borderRadius: BorderRadius.circular(35.0),
               ),
@@ -296,7 +299,7 @@ class CategoriesScreen extends StatelessWidget {
                 ),
                 boxShadow: [
                   BoxShadow(
-                      color: Colors.grey, blurRadius: 15, offset: Offset(5, 5)),
+                      color: Colors.grey, blurRadius: 15, offset: Offset(4, 8)),
                 ],
                 borderRadius: BorderRadius.circular(35.0),
               ),
@@ -325,7 +328,7 @@ class CategoriesScreen extends StatelessWidget {
                 ),
                 boxShadow: [
                   BoxShadow(
-                      color: Colors.grey, blurRadius: 15, offset: Offset(5, 5)),
+                      color: Colors.grey, blurRadius: 15, offset: Offset(4, 8)),
                 ],
                 borderRadius: BorderRadius.circular(35.0),
               ),
