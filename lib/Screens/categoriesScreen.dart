@@ -1,5 +1,7 @@
 import 'package:Library_App/BouncyPageRoute.dart';
 import 'package:Library_App/Screens/architecture.dart';
+import 'package:Library_App/Screens/engineering.dart';
+import 'package:Library_App/Screens/searchBar.dart';
 import 'package:flutter/material.dart';
 
 class CategoriesScreen extends StatelessWidget {
@@ -27,12 +29,14 @@ class CategoriesScreen extends StatelessWidget {
               decoration: BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage('Assets/bb.png'), fit: BoxFit.cover))),
-          elevation: 3,
+          elevation: 2,
           bottomOpacity: 0,
           actions: <Widget>[
             IconButton(
-                onPressed: () => debugPrint("tapped"),
                 icon: Icon(Icons.search),
+                onPressed: () {
+                  showSearch(context: context, delegate: DataSearch());
+                },
                 color: Colors.grey[800],
                 iconSize: 35),
             IconButton(
