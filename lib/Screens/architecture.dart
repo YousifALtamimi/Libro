@@ -27,128 +27,142 @@ class Architecture extends StatelessWidget {
         body: ListView(
           scrollDirection: Axis.vertical,
           children: <Widget>[
-            Padding(
-                padding: const EdgeInsets.all(15),
-                child: Container(
-                  child: FittedBox(
-                    child: Material(
-                      color: Colors.white,
-                      elevation: 14.0,
-                      borderRadius: BorderRadius.circular(20.0),
-                      shadowColor: Colors.grey,
-                      child: Row(
-                        children: <Widget>[
-                          Container(
-                            width: 250,
-                            height: 180,
-                            child: ClipRRect(
-                              borderRadius: new BorderRadius.circular(10.0),
-                              child: Image(
-                                fit: BoxFit.contain,
-                                alignment: Alignment.topLeft,
-                                image: AssetImage('Assets/1st.png'),
-                              ),
-                            ),
-                          ),
-                          Container(
-                              child: Padding(
-                            padding: const EdgeInsets.all(16.0),
-                            child: myDetailsContainer(),
-                          )),
-                        ],
-                      ),
+            Card(
+              elevation: 5,
+              child: Container(
+                height: 100.0,
+                child: Row(
+                  children: <Widget>[
+                    Container(
+                      height: 100.0,
+                      width: 70.0,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(5),
+                              topLeft: Radius.circular(5)),
+                          image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage('Assets/1st.png'))),
                     ),
-                  ),
-                )),
-            Padding(
-                padding: const EdgeInsets.all(15),
-                child: Container(
-                  child: FittedBox(
-                    child: Material(
-                      color: Colors.white,
-                      elevation: 14.0,
-                      borderRadius: BorderRadius.circular(20.0),
-                      shadowColor: Colors.grey,
-                      child: Row(
-                        children: <Widget>[
-                          Container(
-                            width: 250,
-                            height: 100,
-                            child: ClipRRect(
-                              borderRadius: new BorderRadius.circular(10.0),
-                              child: Image(
-                                fit: BoxFit.contain,
-                                alignment: Alignment.topLeft,
-                                image: AssetImage('Assets/1st.png'),
+                    Container(
+                      height: 100,
+                      child: Padding(
+                        padding: EdgeInsets.fromLTRB(10, 2, 0, 0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text("Book Title"),
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(0, 5, 0, 2),
+                              child: Container(
+                                width: 260,
+                                child: Text(
+                                  "Book Description .....",
+                                  style: TextStyle(
+                                      fontSize: 15,
+                                      color: Color.fromARGB(255, 48, 48, 54)),
+                                ),
                               ),
-                            ),
-                          )
-                        ],
+                            )
+                          ],
+                        ),
                       ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            Card(
+              elevation: 5,
+              child: Container(
+                height: 100.0,
+                child: Row(
+                  children: <Widget>[
+                    Container(
+                      height: 100.0,
+                      width: 70.0,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(5),
+                              topLeft: Radius.circular(5)),
+                          image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage('Assets/1st.png'))),
                     ),
-                  ),
-                )),
-            Padding(
-                padding: const EdgeInsets.all(15),
-                child: Container(
-                  child: FittedBox(
-                    child: Material(
-                      color: Colors.white,
-                      elevation: 14.0,
-                      borderRadius: BorderRadius.circular(20.0),
-                      shadowColor: Colors.grey,
-                      child: Row(
-                        children: <Widget>[
-                          Container(
-                            width: 250,
-                            height: 180,
-                            child: ClipRRect(
-                              borderRadius: new BorderRadius.circular(10.0),
-                              child: Image(
-                                fit: BoxFit.contain,
-                                alignment: Alignment.topLeft,
-                                image: AssetImage('Assets/1st.png'),
+                    Container(
+                      height: 100,
+                      child: Padding(
+                        padding: EdgeInsets.fromLTRB(10, 2, 0, 0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text("Book Title"),
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(0, 5, 0, 2),
+                              child: Container(
+                                width: 260,
+                                child: Text(
+                                  "Book Description .....",
+                                  style: TextStyle(
+                                      fontSize: 15,
+                                      color: Color.fromARGB(255, 48, 48, 54)),
+                                ),
                               ),
-                            ),
-                          ),
-                          Container(
-                              child: Padding(
-                            padding: const EdgeInsets.all(16.0),
-                            child: myDetailsContainer(),
-                          )),
-                        ],
+                            )
+                          ],
+                        ),
                       ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            Card(
+              elevation: 5,
+              child: Container(
+                height: 100.0,
+                child: Row(
+                  children: <Widget>[
+                    Container(
+                      height: 100.0,
+                      width: 70.0,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(5),
+                              topLeft: Radius.circular(5)),
+                          image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage('Assets/1st.png'))),
                     ),
-                  ),
-                )),
+                    Container(
+                      height: 100,
+                      child: Padding(
+                        padding: EdgeInsets.fromLTRB(10, 2, 0, 0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text("Book Title"),
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(0, 5, 0, 2),
+                              child: Container(
+                                width: 260,
+                                child: Text(
+                                  "Book Description .....",
+                                  style: TextStyle(
+                                      fontSize: 15,
+                                      color: Color.fromARGB(255, 48, 48, 54)),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
           ],
         ));
   }
-}
-
-Widget myDetailsContainer() {
-  return Column(
-    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-    children: <Widget>[
-      Padding(
-        padding: const EdgeInsets.only(left: 10),
-        child: Container(
-            child: Text(
-          "Backstage Architecture",
-          style: TextStyle(
-              color: Color(0xffe6020a),
-              fontSize: 24.0,
-              fontWeight: FontWeight.bold),
-        )),
-      ),
-      Container(
-          child: Text(
-        "Pastries \u00B7 Phoenix,AZ",
-        style: TextStyle(
-          color: Colors.black54,
-          fontSize: 18.0,
-        ),
-      )),
-    ],
-  );
 }
