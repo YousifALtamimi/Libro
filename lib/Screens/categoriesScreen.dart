@@ -1,4 +1,3 @@
-import 'package:Library_App/BouncyPageRoute.dart';
 import 'package:Library_App/Screens/architecture.dart';
 import 'package:Library_App/Screens/engineering.dart';
 import 'package:Library_App/Screens/searchBar.dart';
@@ -6,7 +5,11 @@ import 'package:flutter/material.dart';
 
 class CategoriesScreen extends StatelessWidget {
   void selectCategory(BuildContext context) {
-    Navigator.of(context).push(BouncyPageRoute(widget: Architecture()));
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (c) => Architecture(),
+      ),
+    );
   }
 
   @override
