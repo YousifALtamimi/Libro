@@ -12,7 +12,7 @@ class Architecture extends StatelessWidget {
               style: TextStyle(
                 fontFamily: 'DMSans',
                 fontWeight: FontWeight.w700,
-                fontSize: 25,
+                fontSize: 22,
                 color: Colors.black,
               ),
             ),
