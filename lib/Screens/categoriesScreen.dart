@@ -50,7 +50,6 @@ class CategoriesScreen extends StatelessWidget {
           ],
         ),
       ),
-      endDrawer: Drawer(),
       body: GridView.count(
         primary: false,
         padding: const EdgeInsets.all(12),
