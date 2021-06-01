@@ -12,6 +12,14 @@ class CategoriesScreen extends StatelessWidget {
     );
   }
 
+  void selectCategory2(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (c) => Engineering(),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -90,7 +98,7 @@ class CategoriesScreen extends StatelessWidget {
             ),
           ),
           InkWell(
-            onTap: () => selectCategory(context),
+            onTap: () => selectCategory2(context),
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
