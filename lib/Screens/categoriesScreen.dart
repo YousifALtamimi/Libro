@@ -1,5 +1,13 @@
 import 'package:Library_App/Screens/architecture.dart';
+import 'package:Library_App/Screens/art.dart';
+import 'package:Library_App/Screens/biology.dart';
+import 'package:Library_App/Screens/business.dart';
+import 'package:Library_App/Screens/economics.dart';
 import 'package:Library_App/Screens/engineering.dart';
+import 'package:Library_App/Screens/law.dart';
+import 'package:Library_App/Screens/maths.dart';
+import 'package:Library_App/Screens/medicine.dart';
+import 'package:Library_App/Screens/physics.dart';
 import 'package:Library_App/Screens/searchBar.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +24,70 @@ class CategoriesScreen extends StatelessWidget {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (c) => Engineering(),
+      ),
+    );
+  }
+
+  void selectCategory3(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (c) => Art(),
+      ),
+    );
+  }
+
+  void selectCategory4(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (c) => Biology(),
+      ),
+    );
+  }
+
+  void selectCategory5(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (c) => Business(),
+      ),
+    );
+  }
+
+  void selectCategory6(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (c) => Economics(),
+      ),
+    );
+  }
+
+  void selectCategory7(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (c) => Law(),
+      ),
+    );
+  }
+
+  void selectCategory8(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (c) => Maths(),
+      ),
+    );
+  }
+
+  void selectCategory9(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (c) => Medicine(),
+      ),
+    );
+  }
+
+  void selectCategory10(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (c) => Physics(),
       ),
     );
   }
@@ -126,9 +198,7 @@ class CategoriesScreen extends StatelessWidget {
             ),
           ),
           InkWell(
-            onTap: () {
-              print("Card Clicked");
-            },
+            onTap: () => selectCategory6(context),
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -155,9 +225,7 @@ class CategoriesScreen extends StatelessWidget {
             ),
           ),
           InkWell(
-            onTap: () {
-              print("Card Clicked");
-            },
+            onTap: () => selectCategory9(context),
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -184,9 +252,7 @@ class CategoriesScreen extends StatelessWidget {
             ),
           ),
           InkWell(
-            onTap: () {
-              print("Card Clicked");
-            },
+            onTap: () => selectCategory4(context),
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -213,9 +279,7 @@ class CategoriesScreen extends StatelessWidget {
             ),
           ),
           InkWell(
-            onTap: () {
-              print("Card Clicked");
-            },
+            onTap: () => selectCategory5(context),
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -242,9 +306,7 @@ class CategoriesScreen extends StatelessWidget {
             ),
           ),
           InkWell(
-            onTap: () {
-              print("Card Clicked");
-            },
+            onTap: () => selectCategory10(context),
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -271,9 +333,7 @@ class CategoriesScreen extends StatelessWidget {
             ),
           ),
           InkWell(
-            onTap: () {
-              print("Card Clicked");
-            },
+            onTap: () => selectCategory8(context),
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -300,9 +360,7 @@ class CategoriesScreen extends StatelessWidget {
             ),
           ),
           InkWell(
-            onTap: () {
-              print("Card Clicked");
-            },
+            onTap: () => selectCategory3(context),
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -329,9 +387,7 @@ class CategoriesScreen extends StatelessWidget {
             ),
           ),
           InkWell(
-            onTap: () {
-              print("Card Clicked");
-            },
+            onTap: () => selectCategory7(context),
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
