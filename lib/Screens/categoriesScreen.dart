@@ -112,7 +112,7 @@ class CategoriesScreen extends StatelessWidget {
               decoration: BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage('Assets/bb.png'), fit: BoxFit.cover))),
-          elevation: 2,
+          elevation: 5,
           bottomOpacity: 0,
           actions: <Widget>[
             IconButton(
